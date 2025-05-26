@@ -1,0 +1,125 @@
+package edu.ncsu.csc411.ps01.agent;
+
+
+import edu.ncsu.csc411.ps01.environment.Action;
+import edu.ncsu.csc411.ps01.environment.Environment;
+import edu.ncsu.csc411.ps01.environment.Position;
+import edu.ncsu.csc411.ps01.environment.Tile;
+import edu.ncsu.csc411.ps01.environment.TileStatus;
+
+import java.util.*;
+
+/**
+  Represents a simple-reflex agent cleaning a particular room.
+  The robot only has one sensor - the ability to retrieve the
+  the status of all its neighboring tiles, including itself.
+ */
+public class Robot {
+    private final Environment env;
+    private final Set<Tile> visited = new HashSet<>();
+    private final Deque<Position> movementHistory = new LinkedList<>();
+
+    /**
+     * Initializes a Robot in a given environment.
+     *
+     * @param env The environment in which the robot operates.
+     */
+    public Robot(Environment env) {
+        this.env = env;
+    }
+
+    /**
+     * Determines the next action for the robot based on its surroundings.
+     * The robot follows this priority:
+     * 1. Clean the current tile if dirty.
+     * 2. Move to a neighboring dirty tile.
+     * 3. Move to an unvisited tile.
+     * 4. If no options remain, backtrack to the previous position.
+     *
+     * @return The next action the robot should take.
+     */
+    public Action getAction() {
+        Map<String, Tile> neighbors = env.getNeighborTiles(this);
+        Tile self = neighbors.get("self");
+        Position currentPosition = env.getRobotPosition(this);
+
+        // Step 1: Clean the current tile if dirty
+        if (self.getStatus() == TileStatus.DIRTY) {
+            return Action.CLEAN;
+        }
+
+        // Step 2: Move to a dirty neighboring tile
+        Action moveToDirtyTile = getMoveToTile(neighbors, TileStatus.DIRTY);
+        if (moveToDirtyTile != null) {
+            movementHistory.push(currentPosition);
+            return moveToDirtyTile;
+        }
+
+        // Step 3: Move to an unvisited, passable neighboring tile
+        Action moveToUnvisitedTile = getMoveToTile(neighbors, TileStatus.CLEAN);
+        if (moveToUnvisitedTile != null) {
+            movementHistory.push(currentPosition);
+            return moveToUnvisitedTile;
+        }
+
+        // Step 4: Backtrack to the previous position if no other options exist
+        return backtrack();
+    }
+
+    /**
+     * Finds a movement action towards a tile with a specified status.
+     *
+     * @param neighbors The neighboring tiles.
+     * @param status    The target tile status (DIRTY or CLEAN).
+     * @return The corresponding movement action or null if no such tile exists.
+     */
+    private Action getMoveToTile(Map<String, Tile> neighbors, TileStatus status) {
+        Map<String, Action> directions = Map.of(
+                "right", Action.MOVE_RIGHT,
+                "below", Action.MOVE_DOWN,
+                "left", Action.MOVE_LEFT,
+                "above", Action.MOVE_UP
+        );
+
+        for (Map.Entry<String, Tile> entry : neighbors.entrySet()) {
+            Tile tile = entry.getValue();
+            if (tile != null && tile.getStatus() == status && tile.getStatus() != TileStatus.IMPASSABLE && !visited.contains(tile)) {
+                visited.add(tile);
+                return directions.get(entry.getKey());
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Backtracks to the previous position when no unvisited or dirty tiles are available.
+     *
+     * @return The backtracking movement action or DO_NOTHING if the robot has nowhere to go.
+     */
+    private Action backtrack() {
+        if (movementHistory.isEmpty()) {
+            return Action.DO_NOTHING; // No history to backtrack
+        }
+
+        Position previousPosition = movementHistory.pop();
+        Position currentPosition = env.getRobotPosition(this);
+
+        // Determine the direction to move back
+        if (previousPosition.getRow() > currentPosition.getRow()) {
+            return Action.MOVE_DOWN;
+        } else if (previousPosition.getRow() < currentPosition.getRow()) {
+            return Action.MOVE_UP;
+        } else if (previousPosition.getCol() > currentPosition.getCol()) {
+            return Action.MOVE_RIGHT;
+        } else if (previousPosition.getCol() < currentPosition.getCol()) {
+            return Action.MOVE_LEFT;
+        }
+
+        return Action.DO_NOTHING;
+    }
+
+    @Override
+    public String toString() {
+        return "Robot [neighbors=" + env.getNeighborTiles(this) + "]";
+    }
+}

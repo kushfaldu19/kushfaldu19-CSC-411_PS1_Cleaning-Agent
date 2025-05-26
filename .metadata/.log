@@ -1,0 +1,306 @@
+!SESSION 2025-01-28 15:53:01.115 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-28 15:53:03.797
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 15:53:04.100
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 15:53:20.928
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-28 15:53:23.410
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-28 15:53:23.410
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-28 15:53:26.830
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-01-28 16:47:56.581 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-28 16:48:00.979
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 16:48:01.275
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 16:48:04.640
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-28 16:48:06.987
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-28 16:48:06.987
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-28 16:48:12.658
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-01-28 17:58:50.189 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-28 17:58:57.161
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 17:58:57.719
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-28 17:59:24.351
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-28 17:59:28.194
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-28 17:59:28.194
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-28 17:59:35.753
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.github.spotbugs.plugin.eclipse 1 0 2025-01-28 18:02:55.936
+!MESSAGE creating new bug collection: D:\CSC 411\.metadata\.plugins\com.github.spotbugs.plugin.eclipse\CSC411_ProblemSet01.fbwarnings.xml
+!SESSION 2025-01-29 18:42:22.421 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-29 18:42:27.108
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-29 18:42:27.445
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-29 18:42:32.682
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-29 18:42:33.271
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-29 18:42:35.735
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-29 18:42:35.735
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-29 18:42:41.996
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-01-29 18:47:59.729 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-29 18:48:05.169
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-29 18:48:05.551
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-29 18:48:08.424
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-29 18:48:09.010
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-29 18:48:11.586
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-29 18:48:11.586
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-29 18:48:17.643
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.github.spotbugs.plugin.eclipse 2 0 2025-01-29 19:45:13.514
+!MESSAGE Can not complete field annotation Field edu.ncsu.csc411.ps01.agent.Robot.visited for the field: visited (not open) [in Robot [in [Working copy] Robot.java [in edu.ncsu.csc411.ps01.agent [in src [in CSC411_ProblemSet01]]]]] in class: edu.ncsu.csc411.ps01.agent.Robot, type class Robot [in [Working copy] Robot.java [in edu.ncsu.csc411.ps01.agent [in src [in CSC411_ProblemSet01]]]]
+  Environment env
+  Set<Tile> seen
+  Deque<Position> movementHistory
+  Robot(Environment)
+  Action getAction()
+  Action getMoveToTile(Map<String,Tile>, TileStatus)
+  Action backtrack()
+  String toString(), bug UuF: Unused field
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): visited [in Robot [in [Working copy] Robot.java [in edu.ncsu.csc411.ps01.agent [in src [in CSC411_ProblemSet01]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:549)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:592)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:303)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:289)
+	at org.eclipse.jdt.internal.core.Member.getNameRange(Member.java:363)
+	at de.tobject.findbugs.reporter.MarkerUtil.completeFieldInfo(MarkerUtil.java:352)
+	at de.tobject.findbugs.reporter.MarkerUtil.getJavaElement(MarkerUtil.java:333)
+	at de.tobject.findbugs.reporter.MarkerUtil.createMarkerParameter(MarkerUtil.java:184)
+	at de.tobject.findbugs.reporter.MarkerUtil.createBugParameters(MarkerUtil.java:172)
+	at de.tobject.findbugs.reporter.MarkerUtil.createMarkers(MarkerUtil.java:126)
+	at de.tobject.findbugs.builder.FindBugsWorker.updateBugCollection(FindBugsWorker.java:378)
+	at de.tobject.findbugs.builder.FindBugsWorker.work(FindBugsWorker.java:228)
+	at de.tobject.findbugs.builder.FindBugsBuilder$StartedFromBuilderJob.runWithProgress(FindBugsBuilder.java:219)
+	at de.tobject.findbugs.FindBugsJob.run(FindBugsJob.java:142)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-01-29 19:45:13.515
+!MESSAGE visited [in Robot [in [Working copy] Robot.java [in edu.ncsu.csc411.ps01.agent [in src [in CSC411_ProblemSet01]]]]] does not exist
+!SESSION 2025-01-30 17:26:39.036 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-01-30 17:26:44.268
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-30 17:26:44.617
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-30 17:41:31.574
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-30 17:41:32.381
+!MESSAGE Logback config file: D:\CSC 411\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-01-30 17:41:36.033
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-30 17:41:36.033
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-30 17:41:43.289
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kushf'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

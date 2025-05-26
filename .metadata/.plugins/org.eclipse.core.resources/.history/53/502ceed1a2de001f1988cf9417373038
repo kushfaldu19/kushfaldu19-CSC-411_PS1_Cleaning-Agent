@@ -1,0 +1,116 @@
+package edu.ncsu.csc411.ps01.agent;
+
+import edu.ncsu.csc411.ps01.environment.Action;
+import edu.ncsu.csc411.ps01.environment.Environment;
+import edu.ncsu.csc411.ps01.environment.Tile;
+import edu.ncsu.csc411.ps01.environment.TileStatus;
+
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+/**
+  Represents a simple-reflex agent cleaning a particular room.
+  The robot only has one sensor - the ability to retrieve the
+  the status of all its neighboring tiles, including itself.
+ */
+public class Robot {
+  private Environment env;
+  private Set<Tile> visitedTiles = new HashSet<>();
+  private boolean movingRight = true; // For zig-zag movement
+
+  /** Initializes a Robot on a specific tile in the environment. */
+  public Robot(Environment env) { 
+    this.env = env;
+  }
+
+  /*
+    Problem Set 01 - Modify the getAction method below in order to
+    simulate the passage of a single time-step. At each time-step, the Robot 
+    decides whether to clean the current tile or move tiles.
+
+    Your task for this Problem Set is to modify the method below such that
+    the Robot agent is able to clean at least 70% of the available tiles on
+    a given Environment. 5 out of the 10 graded test cases, with explanations
+    on how to create new Environments, are available under the test package.
+
+    This method should return a single Action from the Action class.
+      - Action.CLEAN
+      - Action.DO_NOTHING
+      - Action.MOVE_UP
+      - Action.MOVE_DOWN
+      - Action.MOVE_LEFT
+      - Action.MOVE_RIGHT
+   */
+
+  /**
+    Replace this docstring comment with an explanation of your implementation.
+   */
+  public Action getAction() {
+	  // Get neighboring tiles
+	    Map<String, Tile> neighbors = env.getNeighborTiles(this);
+	    Tile self = neighbors.get("self");
+
+	    // Mark the current tile as visited
+	    visitedTiles.add(self);
+
+	    // Prioritize cleaning the current tile if it's dirty
+	    if (self.getStatus() == TileStatus.DIRTY) {
+	        return Action.CLEAN;
+	    }
+
+	    // Move to adjacent dirty tiles if available
+	    for (Map.Entry<String, Tile> entry : neighbors.entrySet()) {
+	        Tile tile = entry.getValue();
+	        if (tile != null && tile.getStatus() == TileStatus.DIRTY) {
+	            switch (entry.getKey()) {
+	                case "above": return Action.MOVE_UP;
+	                case "below": return Action.MOVE_DOWN;
+	                case "left": return Action.MOVE_LEFT;
+	                case "right": return Action.MOVE_RIGHT;
+	            }
+	        }
+	    }
+
+	    // Zig-zag movement strategy
+	    if (movingRight) {
+	        Tile right = neighbors.get("right");
+	        if (right != null && !visitedTiles.contains(right) && right.getStatus() != TileStatus.IMPASSABLE) {
+	            return Action.MOVE_RIGHT;
+	        }
+	    } else {
+	        Tile left = neighbors.get("left");
+	        if (left != null && !visitedTiles.contains(left) && left.getStatus() != TileStatus.IMPASSABLE) {
+	            return Action.MOVE_LEFT;
+	        }
+	    }
+
+	    // If blocked moving horizontally, move down and switch direction
+	    Tile below = neighbors.get("below");
+	    if (below != null && !visitedTiles.contains(below) && below.getStatus() != TileStatus.IMPASSABLE) {
+	        movingRight = !movingRight; // Switch direction for the next row
+	        return Action.MOVE_DOWN;
+	    }
+
+	    // Backtracking: If all neighbors are visited, allow movement to already cleaned tiles
+	    for (Map.Entry<String, Tile> entry : neighbors.entrySet()) {
+	        Tile tile = entry.getValue();
+	        if (tile != null && tile.getStatus() != TileStatus.IMPASSABLE) {
+	            switch (entry.getKey()) {
+	                case "above": return Action.MOVE_UP;
+	                case "below": return Action.MOVE_DOWN;
+	                case "left": return Action.MOVE_LEFT;
+	                case "right": return Action.MOVE_RIGHT;
+	            }
+	        }
+	    }
+
+	    // If no moves are possible, do nothing
+	    return Action.DO_NOTHING;
+  }
+
+  @Override
+  public String toString() {
+    return "Robot [neighbors=" + env.getNeighborTiles(this) + "]";
+  }
+}
